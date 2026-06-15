@@ -1,1 +1,64 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'aos/dist/aos.css';
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=Inter:wght@400;500;600&display=swap');
+
+:root{
+  --bg:#fffaf5;
+  --card:#ffffff;
+  --text:#171717;
+  --muted:#6b7280;
+
+  --orange:#ff8c42;
+  --pink:#ff5e7d;
+  --purple:#7c3aed;
+
+  --shadow:
+    0 20px 80px rgba(0,0,0,.08);
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Inter',sans-serif;
+  overflow-x:hidden;
+}
+
+.container{
+  width:min(1280px,90%);
+  margin:auto;
+}
+
+section{
+  padding:50px 0;
+}
+
+h1,h2,h3,h4{
+  font-family:'Syne',sans-serif;
+}
+
+.card{
+  background:white;
+  border-radius:40px;
+  box-shadow:var(--shadow);
+}
+
+.gradient-text{
+  background:
+  linear-gradient(
+    135deg,
+    var(--orange),
+    var(--pink)
+  );
+
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
